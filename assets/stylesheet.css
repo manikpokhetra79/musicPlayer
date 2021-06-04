@@ -64,6 +64,11 @@ section{
 }
 
 /* main body css */
+@media screen and (max-width: 600px){
+    #main-60{
+        width: 90%;
+    }
+}
 #main-60{
     width: 60%;
     display: flex;
@@ -90,9 +95,6 @@ section{
     width: 100%;
 }
 /* latest release section */
-.section-heading{
-   /* margin: 1rem; */
-}
 .lr-container{
     display: flex;
     flex-flow: row wrap;
