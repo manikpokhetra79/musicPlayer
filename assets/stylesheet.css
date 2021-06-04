@@ -64,11 +64,24 @@ section{
 }
 
 /* main body css */
+#main-body{
+    display: flex;
+}
+
 @media screen and (max-width: 900px){
+    #main-60{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
     #main-60{
         width: 90% !important;
     }
+    #main-body{
+        display: block;
+    }
 }
+
 #main-60{
     width: 60%;
     display: flex;
@@ -236,7 +249,7 @@ padding: 0.4rem;
     align-self: flex-start;
     width: 15%;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     .latest-thumb{
         width: 30%;
     }
@@ -265,6 +278,6 @@ height: 80%;
     margin-top: 0.2rem;
 }
 /* sidebar */
-#sidebar{
-    width: 30%;
+aside{
+    margin-left: 5%;
 }
