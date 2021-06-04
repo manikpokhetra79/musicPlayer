@@ -64,7 +64,7 @@ section{
 }
 
 /* main body css */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     #main-60{
         width: 90% !important;
     }
@@ -107,6 +107,11 @@ section{
     justify-content: space-between;
     width: 45%;
     margin-right : 2px;
+}
+@media screen and (max-width:900px){
+    .lr-sec{
+     width: 90%;
+    }
 }
 .lr-sec-details{
     display: flex;
