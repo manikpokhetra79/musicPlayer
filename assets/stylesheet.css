@@ -239,6 +239,13 @@ padding: 0.4rem;
         width: 30%;
     }
 }
+@media screen and (max-width:300px) {
+    .latest-thumb{
+        width: 45%;
+        justify-content: space-around;
+
+    }
+}
 .latest-thumb img{
 width: 100%;
 height: 80%;
