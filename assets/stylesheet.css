@@ -1,0 +1,251 @@
+
+/* global css */
+body{
+    background-color: #0C1027;
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 1px;
+}
+header .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section{
+    margin-top: 2rem;
+}
+/* header css */
+#main-header{
+    margin:auto;
+    padding: 1rem;
+}
+#header-left{
+    display: flex;
+    align-items: center;
+}
+#header-left p{
+    font-size: 1.4rem;
+}
+#header-left a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.header-item{
+    margin-right: 2rem;
+}
+#header-right{
+    display: flex;
+    align-items: center;
+}
+#header-right form{
+    display: flex;
+    align-items: center;
+} 
+
+#user{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+#user img{
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* main body css */
+#main-60{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 2rem;
+}
+/* image section */
+#banner-section{
+    display: flex;
+    flex-flow: row wrap; 
+     justify-content: center;
+}
+.banner-image{
+    display: flex;
+    flex-flow: row wrap;
+    width: 250px;
+    align-items: center;
+    padding: 0.2rem;
+   
+}
+.banner-image img{
+    height: 100%;
+    width: 100%;
+}
+/* latest release section */
+.section-heading{
+   /* margin: 1rem; */
+}
+.lr-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0px 14px;
+}
+.lr-sec{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 45%;
+    margin-right : 2px;
+}
+.lr-sec-details{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.lr-sec-time{
+text-align: right;
+}
+.lr-sec-time p:first-child{
+    font-size: 1.2rem;
+}
+.lr-sec-details p{
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+.lr-icon{
+    width: 5rem;
+    height: 4rem;
+}
+.lr-icon img{
+    width: 100%;
+    height: 100%;
+    
+}
+@media screen and (max-width: 700px){
+    .lr-sec{
+        width: 100%;
+    }
+    #main-body{
+width: 90%;
+    }
+}
+/* popular artists secton */
+#pa-sec{
+    display: inline-flex;
+    flex-flow: row wrap;
+   margin: auto;
+   margin-bottom: 2rem;
+   
+}
+.pa-thumbnail{
+    width: 8rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+.pa-thumbnail img{
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+/* stations css */
+#stations{
+    background-color: #101845;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#station-icon{
+display: inline-flex;
+width: 5rem;
+height: 5rem;
+padding: 0.4rem;
+margin: auto;
+/* align-items: center; */
+
+}
+#station-icon img{
+    width: 100%;
+    height: 100%;
+}
+#station-sec{
+    display: flex;
+    flex-flow: row wrap;
+}
+.station-thumbnail{
+width: 5rem;
+height: 5rem;
+margin: auto;
+padding: 0.4rem;
+}
+.station-thumbnail img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    opacity : 0.8;
+}
+
+/* category */
+#category-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.category-thumbnail{
+    width: 250px;
+    height: 10rem;
+}
+
+.category-thumbnail img{
+    width: 100%;
+    height : 90%;
+}
+
+/* latest sections */
+
+.latest-section{
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: space-between;
+}
+.latest-thumb{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 7.5rem;
+    height: 9rem;
+}
+.latest-thumb img{
+width: 100%;
+height: 80%;
+}
+.latest-thumb p{
+    font-size: 14px;
+    text-align: left;
+    color: lightgray;
+    font-weight: 700;
+}
+.latest-thumb span{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0.2rem;
+}
+/* sidebar */
+#sidebar{
+    width: 30%;
+}
