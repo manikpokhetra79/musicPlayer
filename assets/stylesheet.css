@@ -223,14 +223,21 @@ padding: 0.4rem;
 .latest-section{
     display: flex;
     flex-flow: row wrap;
-   justify-content: space-between;
+   justify-content: space-evenly;
+   
 }
 .latest-thumb{
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    width: 7.5rem;
     height: 9rem;
+    align-self: flex-start;
+    width: 15%;
+}
+@media screen and (max-width:600px) {
+    .latest-thumb{
+        width: 30%;
+    }
 }
 .latest-thumb img{
 width: 100%;
