@@ -143,9 +143,11 @@ text-align: right;
     }
 }
 /* popular artists secton */
-#pa-sec{
-    display: inline-flex;
+#pa-container{
+    display: flex;
     flex-flow: row wrap;
+}
+.pa-sec{
    margin: auto;
    margin-bottom: 2rem;
    
@@ -223,7 +225,7 @@ padding: 0.4rem;
 .latest-section{
     display: flex;
     flex-flow: row wrap;
-   justify-content: space-evenly;
+  justify-content: space-around;
    
 }
 .latest-thumb{
