@@ -1,7 +1,8 @@
 
 /* global css */
 body{
-    background-color: #0C1027;
+      background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
    color: #fff;
    font-family: 'Roboto', sans-serif;
    letter-spacing: 1px;
@@ -181,7 +182,7 @@ text-align: right;
 
 /* stations css */
 #stations{
-    background-color: #101845;
+    background-color: #232526;
     padding: 1.5rem;
     display: flex;
     flex-flow: row wrap;
