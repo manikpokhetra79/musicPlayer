@@ -66,7 +66,7 @@ section{
 /* main body css */
 @media screen and (max-width: 600px){
     #main-60{
-        width: 90%;
+        width: 90% !important;
     }
 }
 #main-60{
@@ -132,12 +132,9 @@ text-align: right;
     height: 100%;
     
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
     .lr-sec{
         width: 100%;
-    }
-    #main-body{
-width: 90%;
     }
 }
 /* popular artists secton */
@@ -176,8 +173,6 @@ width: 5rem;
 height: 5rem;
 padding: 0.4rem;
 margin: auto;
-/* align-items: center; */
-
 }
 #station-icon img{
     width: 100%;
@@ -206,6 +201,7 @@ padding: 0.4rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 }
 .category-thumbnail{
     width: 250px;
