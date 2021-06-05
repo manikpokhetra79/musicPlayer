@@ -20,15 +20,17 @@
 </head>
 <body>
     <header id="main-header">
-<div class="flex-container">
+<div class="header-container">
     <div id="header-left">
-        <div id="user"> <img src="assets/images/user.png" alt="user pic" ></div> 
+        <div id="user"> <img src="assets/images/spotify.svg" alt="user pic" ></div> 
     <p class = "header-item">Music <br><span><b>Player</b></span></p>
-<a href="#favourites">Favourites</a>
+<a class="header-item" href="#home">Home</a>
+<a class="header-item"  href="#favourites">Favourites</a>
     </div>
     
     <div id="header-right">
         <form>
+            <i class="fas fa-search"></i>
             <input class = "header-item" type="text" placeholder="Search">
             <i class="fas fa-bell header-item"></i>
             <div id="user"> <img src="assets/images/user.png" alt="user pic" ></div> 
@@ -43,9 +45,21 @@
 
         <section id="banner-section">
         
-        <div class="banner-image"> <img src="assets/thumbnails/1.png" alt="">  </div>
-        <div class="banner-image"> <img src="assets/thumbnails/2.png" alt="">  </div>
-        <div class="banner-image"> <img src="assets/thumbnails/1.png" alt="">  </div>
+        <div class="banner-image"> <img src="assets/thumbnails/banner-1.jpg" alt=""> 
+                <a href="#" class="icon" title="banner">
+                    <i class="far fa-play-circle fa-4x play-icon"></i>
+                </a>
+             </div>
+        <div class="banner-image"> <img src="assets/thumbnails/banner-2.jpg" alt="">
+            <a href="#" class="icon" title="banner">
+                <i class="far fa-play-circle fa-4x play-icon"></i>
+            </a>
+          </div>
+        <div class="banner-image"> <img src="assets/thumbnails/banner-3.png" alt="">
+            <a href="#" class="icon" title="banner">
+                <i class="far fa-play-circle fa-4x play-icon"></i>
+            </a>
+          </div>
         
         <!-- section end -->
         </section>
@@ -57,6 +71,7 @@
                 <div class="lr-sec-details">
                 <div class=" lr-icon">
                     <img src="assets/thumbnails/lr.png">
+                    <i class="far fa-play-circle fa-2x play-icon"></i>
                 </div>
                 <p><b>Onism</b><br>
                     <span>June 3 2021</span></p>
@@ -70,6 +85,7 @@
                     <div class="lr-sec-details">
                     <div class=" lr-icon">
                         <img src="assets/thumbnails/lr.png">
+                        <i class="far fa-play-circle fa-2x play-icon"></i>
                     </div>
                     <p><b>Onism</b><br>
                         <span>June 3 2021</span></p>
@@ -83,6 +99,7 @@
                         <div class="lr-sec-details">
                         <div class=" lr-icon">
                             <img src="assets/thumbnails/lr.png">
+                            <i class="far fa-play-circle fa-2x play-icon"></i>
                         </div>
                         <p><b>Onism</b><br>
                             <span>June 3 2021</span></p>
@@ -96,6 +113,7 @@
                             <div class="lr-sec-details">
                             <div class=" lr-icon">
                                 <img src="assets/thumbnails/lr.png">
+                                <i class="far fa-play-circle fa-2x play-icon"></i>
                             </div>
                             <p><b>Onism</b><br>
                                 <span>June 3 2021</span></p>
@@ -110,30 +128,39 @@
         <section id="popular-artists">
             <h3 class="section-heading">Popular Artists</h3>
         <div id="pa-container">
-            <div class="pa-sec">
-                <div class="pa-thumbnail">  <img src="assets/artists/ed.jpg"> <p>Ed Sheeran</p></div>
+            <div class="pa-sec relative">
+                <div class="pa-thumbnail">  <img src="assets/artists/ed.jpg"> 
+                   
+                    <p>Ed Sheeran</p>
+                    <i class="far fa-play-circle fa-2x play-icon"></i>
+                </div>
             </div>
-            <div class="pa-sec">
-                <div class="pa-thumbnail">  <img src="assets/artists/coldplay.png"> <p>Coldplay</p></div>
+            <div class="pa-sec relative">
+                <div class="pa-thumbnail">  <img src="assets/artists/coldplay.png">
+                    <i class="far fa-play-circle fa-2x play-icon"></i>
+                     <p>Coldplay</p></div>
             </div>
-            <div class="pa-sec">
-                <div class="pa-thumbnail">  <img src="assets/artists/zyan.jpg"> <p>Zyan</p></div>
+            <div class="pa-sec relative">
+                <div class="pa-thumbnail">  <img src="assets/artists/zyan.jpg"> 
+                    <i class="far fa-play-circle fa-2x play-icon"></i>
+                    <p>Zyan</p></div>
             </div>
-            <div class="pa-sec">
-                <div class="pa-thumbnail">  <img src="assets/artists/ed.jpg"> <p>Ed Sheeran</p></div>
+            <div class="pa-sec relative">
+                <div class="pa-thumbnail">  <img src="assets/artists/ed.jpg"> 
+                    <i class="far fa-play-circle fa-2x play-icon"></i>
+                    <p>Ed Sheeran</p></div>
             </div>
-            <div class="pa-sec">
-                <div class="pa-thumbnail">  <img src="assets/artists/coldplay.png"> <p>Coldplay</p></div>
-            </div>
-            <div class="pa-sec">
-                <div class="pa-thumbnail">  <img src="assets/artists/zyan.jpg"> <p>Zyan</p></div>
+            <div class="pa-sec relative">
+                <div class="pa-thumbnail">  <img src="assets/artists/coldplay.png"> 
+                    <i class="far fa-play-circle fa-2x play-icon"></i>
+                    <p>Coldplay</p></div>
             </div>
         </div>
         </section>
     
         <!-- station section start -->
         <section id="stations">
-            <div id="station-icon"><img src="assets/station/rock.png"></div>
+            <div id="station-icon"><img src="assets/images/station.jpg"></div>
             <div id="station-sec">
                 <div class="station-thumbnail"> <img src="assets/station/love.png"></div>
                 <div class="station-thumbnail"> <img src="assets/station/retro.png"></div>
