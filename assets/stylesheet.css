@@ -46,13 +46,14 @@ section{
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
+    margin: 0 1rem;
 }
 .header-item{
     margin-right: 2rem;
 }
 #header-right{
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 #header-right form{
     display: flex;
@@ -143,6 +144,9 @@ section{
     .fa-search{
         left: 50vw;
     }
+    #header-left p{
+        display: none;
+    }
 }
 @media screen and (max-width : 450px){
     #header-right input{
@@ -154,15 +158,18 @@ section{
     .fa-microphone-alt{
         left: 5vw;
     }
-}
-@media screen and (max-width : 300px){
-    #header-right input{
-        width: 25vw;
+    #header-right{
+        flex-direction: column;
     }
-    .fa-search{
-        left: 25vw;
-    }
+    #user{
+        width: 3rem;
+        }
+      .header-item{
+            margin-right: 0.5rem;
+        }
 }
+
+
 /* main body css */
 #main-body{
     display: flex;
@@ -434,7 +441,7 @@ transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width : 650px){
     .category-thumbnail{
-        transform: scale(1.3,1.3);
+        transform: scale(1.2,1.2);
         margin: 1.5rem;
     }
 }
