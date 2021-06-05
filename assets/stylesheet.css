@@ -485,7 +485,7 @@ aside{
     margin-right: 2rem;
 }
 .playlist-data span{
-    display: none;
+  display: block;
 }
 @media screen and (max-width : 900px){
     aside{
@@ -497,5 +497,14 @@ aside{
     aside{
         width: 90%;
         margin-left : 1rem;
+    }
+    .playlist-data{
+        width : 40%;
+    }
+}
+@media screen and (max-width: 550px){
+    .playlist-data{
+        justify-content: flex-start;
+        width : 90%;
     }
 }
