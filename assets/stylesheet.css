@@ -156,10 +156,10 @@ section{
 }
 @media screen and (max-width : 300px){
     #header-right input{
-        width: 35vw;
+        width: 25vw;
     }
     .fa-search{
-        left: 40vw;
+        left: 25vw;
     }
 }
 /* main body css */
@@ -348,7 +348,7 @@ width: 6rem;
 height: 6rem;
 padding: 0.4rem;
 position: relative;
-transition: all  0.8s ease-in-out;
+
 border-radius: 50%;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 display: flex;
@@ -360,6 +360,7 @@ text-align: center;
 }
 .station-thumbnail:hover{
     filter: grayscale(100%) ;
+    transition: all  0.8s ease-in-out;
 }
 .station-thumbnail:hover .play-icon{
     opacity: 1;
@@ -374,6 +375,17 @@ text-align: center;
     .station-thumbnail{
         width: 7rem;
         height: 7rem;
+    }
+}
+@media screen and (max-width:600px){
+    #station-sec{
+    justify-content: center;
+}
+}
+@media screen and (max-width:400px){
+    .station-thumbnail{
+        width: 5rem;
+        height: 5rem;
     }
 }
 
@@ -507,4 +519,11 @@ aside{
         justify-content: flex-start;
         width : 90%;
     }
+}
+
+/* footer */
+footer audio{
+    position: fixed;
+    bottom : 0;
+  width :100%;  
 }
