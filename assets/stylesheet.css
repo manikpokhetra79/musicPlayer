@@ -63,7 +63,10 @@ section{
     width: 100%;
     border-radius: 50%;
 }
-
+#header-right input{
+    padding: 5px;
+    border-radius: 0%;
+}
 /* main body css */
 #main-body{
     display: flex;
@@ -308,8 +311,14 @@ aside{
 }
 .playlist-data img{
     height: 90%;
-    margin: auto;
+    margin-left:1rem;
+    margin-right: 2rem;
 }
 .playlist-data span{
-    display: block;
+    display: none;
+}
+@media screen and (max-width : 900px){
+    .song-serial{
+    display: hidden;
+    }
 }
