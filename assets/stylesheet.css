@@ -1,8 +1,9 @@
 
 /* global css */
 body{
-    background: linear-gradient(to right, #000000, #434343);    color: #fff;
-   font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(to right, #000000, #434343);    color: #fff; */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Roboto', sans-serif;
    margin: 1rem;
 }
 .header-container{
@@ -12,9 +13,13 @@ body{
 }
 p{
     font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+.lightgray{
+color: lightgray;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 .relative{
     position: relative;
@@ -72,7 +77,7 @@ section{
     padding: 8px;
     border-radius:25px;
     border: none;
-    background:  #414345;
+    background:  #302b63;
     color: #fff;
     height: 1.6rem;
     width: 30vw;
@@ -335,7 +340,7 @@ filter: blur(1px);
 
 /* stations css */
 #stations{
-    background-color: #232526;
+    background-color: #302b63;
     padding: 1rem;
 }
 #station-sec{
@@ -462,7 +467,7 @@ transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width:769px) {
     .latest-thumb{
-        width: 25%;
+        widt h: 25%;
         margin: 1rem 0.2rem;
     }
 }
@@ -553,3 +558,24 @@ footer audio{
 
 
 /* artist.html css */
+#artist-container{
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #302b63;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#artist-image{
+    width: 40%;
+    height: 20rem;
+    opacity: 0.8;
+}
+#artist-image img{
+    width: 100%;
+    height: 100%;;
+}
+#artist-info{
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
