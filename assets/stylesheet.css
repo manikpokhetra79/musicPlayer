@@ -3,6 +3,7 @@
 body{
     background: linear-gradient(to right, #000000, #434343);    color: #fff;
    font-family: 'Roboto', sans-serif;
+   margin: 1rem;
 }
 .header-container{
     display: flex;
@@ -30,30 +31,29 @@ section{
     opacity: 0;
   }
 /* header css */
-#main-header{
-    padding: 1rem;
+.header-container{
+    display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
 }
 #header-left{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    margin-left: 1rem ;
 }
 #header-left p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 #header-left a{
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
-    margin: 0 1rem;
 }
 .header-item{
-    margin-right: 2rem;
+    margin: 0 2rem;
 }
 #header-right{
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 #header-right form{
     display: flex;
@@ -62,7 +62,6 @@ section{
 #user{
     width: 4rem;
     height: 4rem;
-    margin-right: 1rem;
 }
 #user img{
     width: 100%;
@@ -75,8 +74,8 @@ section{
     border: none;
     background:  #414345;
     color: #fff;
-    height: 1.5rem;
-    width: 40vw;
+    height: 1.6rem;
+    width: 30vw;
 }
 #header-right input:focus{
     outline: none;
@@ -95,7 +94,7 @@ section{
 .fa-search{
     position: relative;
     font-size: 1.2rem;
-    left: 40vw;
+    left: 30vw;
     color:#50B95D;
 }
 .fa-bell{
@@ -105,80 +104,72 @@ section{
     position: relative;
     color:#50B95D;
     font-size: 1.4rem;
-    left: 4vw;
+    left: 5vw;
 }
-#main-header{
-    width :90%
-}
-@media screen and (max-width : 900px){
-    .header-container {
-        flex-direction: column;
-        }
-        #header-left{
-            justify-content: flex-start;
-        }
+
+@media screen and (max-width : 1024px){
         #header-right input{
-            width: 65vw;
+            width: 25vw;
         }
         .fa-search{
-            left: 65vw;
+            left: 28vw;
+        }
+        .header-item{
+            margin: 0 1rem;
         }
 }
-@media screen and (max-width : 800px){
-   
-    #header-right input{
-        width: 60vw;
-    }
+@media screen and (max-width : 769px){
     .fa-search{
-        left: 60vw;
+        left: 45vw;
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-item{
+        margin-right: 1.5rem;
+    }
+    #header-right form{
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+    #header-right input{
+        width: 40vw;
+    }
+    .fa-microphone-alt{
+     left: 8vw;
     }
 }
-@media screen and (max-width : 650px){
-    #main-60{
-        min-width: 90%;
-        margin: auto;
-    }
-    #header-right input{
-        width: 50vw;
+@media screen and (max-width : 480px){
+    .header-item{
+        margin-right: 0.5rem;
     }
     .fa-search{
         left: 50vw;
     }
-    #header-left p{
-        display: none;
-    }
-}
-@media screen and (max-width : 450px){
-    #header-right input{
-        width: 45vw;
-    }
-    .fa-search{
-        left: 45vw;
-    }
     .fa-microphone-alt{
-        left: 5vw;
-    }
-    #header-right{
-        flex-direction: column;
-    }
-    #user{
+        left: 12vw;
+       }
+       #user{
         width: 3rem;
-        }
-      .header-item{
-            margin-right: 0.5rem;
-        }
+        height: 3rem;
+    }
+       
 }
 
 
 /* main body css */
 #main-body{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 769px){
    
     #main-body{
         display: block;
+        }
+        #main-60{
+      width: 90% !important;
         }
 }
 
@@ -350,6 +341,7 @@ filter: blur(1px);
 #station-sec{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 .station-thumbnail{
 width: 6rem;
@@ -462,9 +454,16 @@ transition: all 0.5s ease-in-out;
     align-self: flex-start;
     width: 15%;
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1024px) {
     .latest-thumb{
-        width: 30%;
+        width: 25%;
+        margin: 1rem 0.2rem;
+    }
+}
+@media screen and (max-width:769px) {
+    .latest-thumb{
+        width: 25%;
+        margin: 1rem 0.2rem;
     }
 }
 @media screen and (max-width:300px) {
