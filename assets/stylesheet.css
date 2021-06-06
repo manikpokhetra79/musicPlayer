@@ -176,6 +176,7 @@ section{
         }
         #main-60{
       width: 90% !important;
+      margin: 0 auto !important;
         }
 }
 
@@ -697,6 +698,9 @@ footer audio{
     transform: scale(1.1);
   }
   @media screen and (max-width: 1024px) {
+    .artist-song-container p{
+        font-size: 0.9rem;
+    }
     .artist-name{
         display:block!important;
         font-weight: bold;
@@ -713,5 +717,17 @@ footer audio{
     }
     .artist-sc-right .fa-heart{ 
         margin-left: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .artist-sc-left .song-serial{
+        display: none ;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .artist-sc-left{
+        padding: 0;
+        height : 4rem;
+       
     }
   }
