@@ -473,7 +473,7 @@ transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width:769px) {
     .latest-thumb{
-        widt h: 25%;
+        width: 25%;
         margin: 1rem 0.2rem;
     }
 }
