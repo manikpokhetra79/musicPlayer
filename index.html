@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Homepage</title>
     <!-- custom stylesheet -->
-    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="assets/stylesheet/index.css">
     <!-- fa fa icons sheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- google font -->
-    <!-- roboto -->
+    <!-- roboto font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- lato -->
+    <!-- lato font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <!-- ubuntu -->
+    <!-- ubuntu font -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- header container starts -->
     <header id="main-header">
 <div class="header-container">
     <div id="header-left">
@@ -38,7 +38,6 @@
         </form>
    
         </div>
-    <!-- header container ending -->
 </div>
     </header>
 <div id="main-body">
@@ -65,6 +64,7 @@
         
         <!-- section end -->
         </section>
+        <!-- latest release section start -->
         <section id="latest-release">
          <h3 class="section-heading">Latest Release</h3>
          <div class="lr-container">
@@ -126,13 +126,14 @@
                             </div>
                             </div>
          </div>
+             <!-- section end -->
         </section>
+            <!-- popular artist section start -->
         <section id="popular-artists">
             <h3 class="section-heading">Popular Artists</h3>
         <div id="pa-container">
             <div class="pa-sec relative">
                 <div class="pa-thumbnail">  <img src="assets/artists/ed.jpg"> 
-                   
                     <p>Ed Sheeran</p>
                     <i class="far fa-play-circle fa-2x play-icon"></i>
                 </div>
@@ -158,6 +159,7 @@
                     <p>Coldplay</p></div>
             </div>
         </div>
+             <!-- section end-->
         </section>
     
         <!-- station section start -->
@@ -193,8 +195,10 @@
                      <p>pop</p></div>
     
             </div>
+             <!-- section end-->
         </section>
-        <!-- category section -->
+
+        <!-- category section start-->
         <section id="category-section">
             <div class="category-thumbnail"><img src="assets/thumbnails/rock.png">
                 <h4>Rock</h4>
@@ -205,7 +209,9 @@
             <div class="category-thumbnail"><img src="assets/thumbnails/electronic.png">
                 <h4>Electronic</h4>
             </div>
+             <!-- section end-->
         </section>
+
         <!-- latest english section -->
         <section id="latest-english">
             <h3 class="section-heading">Latest English</h3>
@@ -230,7 +236,9 @@
             <p>Build a Bitch<span>4:30</span></p>
         </div>
         </div>
+         <!-- section end-->
         </section>
+          <!-- latest hindi section -->
         <section id="latest-hindi">
             <h3 class="section-heading">Latest Hindi</h3>
             <div class="latest-section">
@@ -262,15 +270,17 @@
                 </div>
         </section>
         </main>
+        <!-- aside section start -->
         <aside>
-            <section id="playlist">
+             <!-- playlist section start -->
+            <section id="playlist">         
             <div class="playlist-heading">
                <div> <h3 class="section-heading">My Playlist</h3></div>
                <div> <select value = "Queue">
                 <option>Playlist</option>
                 <option>Favourite Songs</option>
-            </select></div>
-               
+            </select>
+        </div>
             </div>
             <div id="playlist-body">
             <div class="playlist-data">
@@ -324,19 +334,20 @@
             <img src="assets/songs/Silk_Sonic_-_Leave_the_Door_Open.png">
             <p>Leave Door<span>4:30</span></p>
             </div>
-            
-           
             </div>
+             <!-- playlist section ends -->
             </section>
-
-        </aside>
-</div>
-<footer>
-    <audio controls autoplay class="audio-player">
+            <!-- aside section ends -->
+             </aside>
+            </div>
+        <!-- footer start -->
+        <footer>
+    <audio controls class="audio-player">
         <source src="songs/dancemonkey.mp3" type="audio/mpeg">
         <source src="songs/build_a_bitch.mp3." type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
 </footer>
+<!-- footer ends -->
 </body>
 </html>

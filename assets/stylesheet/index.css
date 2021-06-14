@@ -20,7 +20,9 @@ p{
 color: lightgray;
 }
 h1,h2,h3,h4,h5,h6{
-    color: white;
+    /* color: white; */
+    color:#50B95D;
+    letter-spacing: 0.1rem;
 }
 .relative{
     position: relative;
@@ -28,15 +30,18 @@ h1,h2,h3,h4,h5,h6{
 section{
     margin-top: 2rem;
 }
+
 /* overlay icon css */
 .play-icon{
     position: absolute;
-    color: lightgrey;
+    /* color: lightgrey; */
+    color:#50B95D;
     top: 40%;
     left: 40%;
     opacity: 0;
   }
-/* header css */
+
+/* main header css */
 .header-container{
     display: flex;
    flex-flow: row wrap;
@@ -231,6 +236,7 @@ transition: .5s ease-in-out;
         width: 80%;
     }
 }
+
 /* latest release section */
 .lr-container{
     display: flex;
